@@ -1,0 +1,179 @@
+@import "tailwindcss";
+
+@theme {
+  /* Border Radius */
+  --radius-lg: 0.75rem;
+  --radius-md: calc(0.75rem - 2px);
+  --radius-sm: calc(0.75rem - 4px);
+
+  /* Font Family */
+  --font-outfit: "Outfit", sans-serif;
+
+  /* Colors - Light Mode (default) */
+  --color-background: hsl(0 0% 100%);
+  --color-foreground: hsl(0 0% 5%);
+  --color-card: hsl(0 0% 98%);
+  --color-card-foreground: hsl(0 0% 5%);
+  --color-popover: hsl(0 0% 100%);
+  --color-popover-foreground: hsl(0 0% 5%);
+  --color-primary: hsl(0 0% 5%);
+  --color-primary-foreground: hsl(0 0% 100%);
+  --color-secondary: hsl(0 0% 96%);
+  --color-secondary-foreground: hsl(0 0% 10%);
+  --color-muted: hsl(0 0% 94%);
+  --color-muted-foreground: hsl(0 0% 40%);
+  --color-accent: hsl(0 0% 90%);
+  --color-accent-foreground: hsl(0 0% 10%);
+  --color-destructive: hsl(0 84.2% 60.2%);
+  --color-destructive-foreground: hsl(0 0% 100%);
+  --color-border: hsl(0 0% 88%);
+  --color-input: hsl(0 0% 88%);
+  --color-ring: hsl(0 0% 5%);
+
+  /* Gray Scale */
+  --color-gray-50: hsl(0 0% 98%);
+  --color-gray-100: hsl(0 0% 96%);
+  --color-gray-200: hsl(0 0% 90%);
+  --color-gray-300: hsl(0 0% 80%);
+  --color-gray-400: hsl(0 0% 60%);
+  --color-gray-500: hsl(0 0% 45%);
+  --color-gray-600: hsl(0 0% 30%);
+  --color-gray-700: hsl(0 0% 20%);
+  --color-gray-800: hsl(0 0% 12%);
+  --color-gray-900: hsl(0 0% 5%);
+
+  /* Sidebar */
+  --color-sidebar: hsl(0 0% 98%);
+  --color-sidebar-foreground: hsl(0 0% 26%);
+  --color-sidebar-primary: hsl(0 0% 10%);
+  --color-sidebar-primary-foreground: hsl(0 0% 98%);
+  --color-sidebar-accent: hsl(0 0% 96%);
+  --color-sidebar-accent-foreground: hsl(0 0% 10%);
+  --color-sidebar-border: hsl(0 0% 91%);
+  --color-sidebar-ring: hsl(0 0% 60%);
+
+  /* Animations */
+  --animate-fade-up: fadeUp 0.6s ease-out forwards;
+  --animate-accordion-down: accordion-down 0.2s ease-out;
+  --animate-accordion-up: accordion-up 0.2s ease-out;
+}
+
+/* Dark Mode Overrides */
+@layer base {
+  .dark {
+    --color-background: hsl(0 0% 5%);
+    --color-foreground: hsl(0 0% 98%);
+    --color-card: hsl(0 0% 8%);
+    --color-card-foreground: hsl(0 0% 98%);
+    --color-popover: hsl(0 0% 5%);
+    --color-popover-foreground: hsl(0 0% 98%);
+    --color-primary: hsl(0 0% 98%);
+    --color-primary-foreground: hsl(0 0% 5%);
+    --color-secondary: hsl(0 0% 15%);
+    --color-secondary-foreground: hsl(0 0% 98%);
+    --color-muted: hsl(0 0% 15%);
+    --color-muted-foreground: hsl(0 0% 65%);
+    --color-accent: hsl(0 0% 15%);
+    --color-accent-foreground: hsl(0 0% 98%);
+    --color-destructive: hsl(0 62.8% 30.6%);
+    --color-destructive-foreground: hsl(0 0% 98%);
+    --color-border: hsl(0 0% 18%);
+    --color-input: hsl(0 0% 18%);
+    --color-ring: hsl(0 0% 84%);
+    --color-sidebar: hsl(0 0% 10%);
+    --color-sidebar-foreground: hsl(0 0% 96%);
+    --color-sidebar-primary: hsl(0 0% 48%);
+    --color-sidebar-primary-foreground: hsl(0 0% 100%);
+    --color-sidebar-accent: hsl(0 0% 16%);
+    --color-sidebar-accent-foreground: hsl(0 0% 96%);
+    --color-sidebar-border: hsl(0 0% 16%);
+    --color-sidebar-ring: hsl(0 0% 60%);
+  }
+}
+
+/* Base Styles */
+@layer base {
+  * {
+    border-color: var(--color-border);
+  }
+
+  body {
+    background-color: var(--color-background);
+    color: var(--color-foreground);
+    font-family: var(--font-outfit);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Keyframes */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+    opacity: 1;
+  }
+  to {
+    height: 0;
+    opacity: 0;
+  }
+}
+
+/* Custom Utilities */
+@utility text-balance {
+  text-wrap: balance;
+}
+
+@utility animate-fade-up {
+  animation: fadeUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+@utility animate-fade-up-delay-1 {
+  animation: fadeUp 0.6s ease-out 0.1s forwards;
+  opacity: 0;
+}
+
+@utility animate-fade-up-delay-2 {
+  animation: fadeUp 0.6s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+@utility animate-fade-up-delay-3 {
+  animation: fadeUp 0.6s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+@utility hover-lift {
+  transition: all 0.3s;
+  &:hover {
+    transform: translateY(-0.25rem);
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+      0 8px 10px -6px rgb(0 0 0 / 0.1);
+  }
+}
