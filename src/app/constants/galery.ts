@@ -1,6 +1,7 @@
 import {
   Laptop,
   ShoppingBasket,
+  Smartphone,
   Sparkles,
   Users,
   Wrench,
@@ -21,13 +22,13 @@ export const galeryItems = [
   {
     id: 1,
     title: "Fachada da Loja",
-    description: "Nossa loja no centro da cidade",
+    description: "Visite nossa loja moderna e bem localizada no coração da cidade.",
     icon: fachada,
   },
   {
     id: 2,
-    title: "Bancada",
-    description: "Equipamentos de última geração",
+    title: "Bancada de Reparos",
+    description: "Nossa oficina é equipada com ferramentas de última geração para um diagnóstico preciso.",
     icon: Wrench,
   },
   {
@@ -38,9 +39,9 @@ export const galeryItems = [
   },
   {
     id: 4,
-    title: "Dispositivos",
-    description: "Trabalhamos com todos os modelos de iphone ",
-    icon: Laptop,
+    title: "Especialistas em iPhone",
+    description: "Reparo especializado para todos os modelos de iPhone, dos clássicos aos mais recentes.",
+    icon: Smartphone,
   },
   {
     id: 5,
