@@ -30,8 +30,8 @@ export const NavItems = [
     label: "Localização",
   },
   {
-    href: "#estimativa",
-    label: "Estimativa",
+    href: "#orçamento",
+    label: "Orçamento",
   },
   {
     href: "#faq",
