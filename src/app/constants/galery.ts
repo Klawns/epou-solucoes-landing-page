@@ -1,10 +1,10 @@
 import type { GaleryItem } from "@/app/types/galery.type";
 
-import fachada from "../assets/fachada.jpg";
-import equipamentos from "../assets/alguns_aparelhos.jpeg";
-import acessorios from "../assets/acessorios.jpeg";
-import celular_desmontado from "../assets/telefone_desmontado.jpeg";
-import maquina_laser from "../assets/maquina_laser.jpeg";
+import fachada from "../assets/galery_images/fachada.webp";
+import equipamentos from "../assets/galery_images/alguns_aparelhos.webp";
+import acessorios from "../assets/galery_images/acessorios.webp";
+import celular_desmontado from "../assets/galery_images/telefone_desmontado.jpg";
+import maquina_laser from "../assets/galery_images/maquina_laser.webp";
 
 /**
  * An array of objects representing items in the gallery.

@@ -1,6 +1,6 @@
 import { Team as TeamData } from "@/app/constants/team";
 import TeamCard from "@/app/features/landing-page/components/team/components/TeamCard.tsx";
-import teamImage from "@/app/assets/equipe.jpeg";
+import localTeamImage from "@/app/assets/galery_images/equipe.webp";
 
 /**
  * Renders the section of the landing page that introduces the team members.
@@ -31,10 +31,12 @@ export default function Team() {
         {/* Imagem da Equipe */}
         <div className="mb-16">
           <img
-            src={teamImage}
+            src={localTeamImage}
             alt="Nossa Equipe Reunida"
             className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg object-cover"
             style={{ aspectRatio: "16/9" }}
+            loading="lazy"
+            decoding="async"
           />
         </div>
 

@@ -36,7 +36,7 @@ export default function CarroselCard({
 
   const carouselItemClass = cn(
     "pl-4 md:pl-6",
-    isHorizontal ? "md:basis-1/2" : "md:basis-1/3"
+    isHorizontal ? "md:basis-1/2" : "md:basis-1/3",
   );
 
   const cardContentClass = cn(
@@ -45,7 +45,7 @@ export default function CarroselCard({
       "aspect-video": isHorizontal,
       "aspect-[9/16]": isVertical,
       "aspect-4/3": !isHorizontal && !isVertical,
-    }
+    },
   );
 
   return (
@@ -58,6 +58,8 @@ export default function CarroselCard({
                 src={Icon}
                 alt={title}
                 className="w-full h-full object-cover"
+                loading="lazy"
+                decoding="async"
               />
             ) : Icon ? (
               <Icon
