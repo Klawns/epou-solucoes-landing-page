@@ -82,8 +82,8 @@ export default function LocationMap() {
                       Horário de Funcionamento
                     </h3>
                     <div className="text-muted-foreground space-y-1">
-                      <p>Segunda a Sexta: 08:00 - 19:00</p>
-                      <p>Sábado: 08:00 - 13:00</p>
+                      <p>Segunda a Sexta: 08:30 - 19:00</p>
+                      <p>Sábado: 08:30 - 13:00</p>
                       <p>Domingo: Fechado</p>
                     </div>
                   </div>

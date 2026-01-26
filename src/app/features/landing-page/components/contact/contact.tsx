@@ -249,7 +249,7 @@ export default function Contact() {
             </a>
 
             <a
-              href="mailto:contato@epousolucoes.com.br"
+              href="mailto:epousolucoes@gmail.com"
               className="flex flex-col items-center p-8 bg-primary-foreground/5 rounded-2xl hover:bg-primary-foreground/10 transition-colors duration-300 backdrop-blur-sm"
             >
               <div className="w-14 h-14 rounded-full bg-primary-foreground/10 flex items-center justify-center mb-4">
@@ -257,7 +257,7 @@ export default function Contact() {
               </div>
               <h3 className="font-semibold mb-1">Email</h3>
               <p className="text-primary-foreground/70 text-sm">
-                contato@epousolucoes.com.br
+                epousolucoes@gmail.com
               </p>
             </a>
           </div>

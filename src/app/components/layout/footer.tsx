@@ -136,19 +136,19 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Mail className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                 <a
-                  href="mailto:contato@epousolucoes.com"
+                  href="mailto:epousolucoes@gmail.com"
                   className="text-sm text-muted-foreground hover:text-background transition-colors"
                 >
-                  contato@epousolucoes.com
+                  epousolucoes@gmail.com
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Clock className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                 <span className="text-sm text-muted-foreground">
-                  Seg - Sex: 8h às 19h
+                  Seg - Sex: 8h30 às 19h
                 </span>
                 <span className="text-sm text-muted-foreground">
-                  Sab: 08h às 13h
+                  Sab: 08h30 às 13h
                 </span>
                 <span className="text-sm text-muted-foreground">
                   Domingo: Fechado
