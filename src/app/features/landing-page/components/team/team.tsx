@@ -1,4 +1,3 @@
-import { Users } from "lucide-react";
 import { Team as TeamData } from "@/app/constants/team";
 import TeamCard from "@/app/features/landing-page/components/team/components/TeamCard.tsx";
 import teamImage from "@/app/assets/equipe.jpeg";

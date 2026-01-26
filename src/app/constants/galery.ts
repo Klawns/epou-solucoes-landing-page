@@ -1,3 +1,4 @@
+import type { GaleryItem } from "@/app/types/galery.type";
 
 import fachada from "../assets/fachada.jpg";
 import equipamentos from "../assets/alguns_aparelhos.jpeg";
@@ -14,7 +15,7 @@ import maquina_laser from "../assets/maquina_laser.jpeg";
  * - `description`: A brief description of the gallery item.
  * - `icon`: The icon for the gallery item. This can be a string representing the path to an image or a Lucide icon component.
  */
-export const galeryItems = [
+export const galeryItems: GaleryItem[] = [
   {
     id: 1,
     title: "Fachada da Loja",
@@ -53,6 +54,6 @@ export const galeryItems = [
     description:
       "Personalize seu smartphone ou outro dispositivo com uma gravação à laser de alta precisão.",
     icon: maquina_laser,
-    orientation: "vertical"
+    orientation: "vertical",
   },
 ];
