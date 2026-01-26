@@ -39,7 +39,7 @@ export default function RepairEstimate() {
   } = useRepairEstimate();
 
   return (
-    <section id="estimativa" className="py-20 bg-gray-900 text-gray-100">
+    <section id="orçamento" className="py-20 bg-gray-900 text-gray-100">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
