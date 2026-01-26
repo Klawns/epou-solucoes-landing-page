@@ -1,5 +1,4 @@
 import {
-  Laptop,
   ShoppingBasket,
   Smartphone,
   Sparkles,
