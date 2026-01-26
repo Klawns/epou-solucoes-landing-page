@@ -21,4 +21,9 @@ export type GaleryItem = {
    * This can be a Lucide icon component, a string representing an image path, or null.
    */
   icon: LucideIcon | null | string;
+  /**
+   * The orientation of the gallery item.
+   * This is an optional property that can be either 'horizontal' or 'vertical'.
+   */
+  orientation?: "horizontal" | "vertical";
 };
