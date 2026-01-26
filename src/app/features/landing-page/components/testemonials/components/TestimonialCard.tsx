@@ -1,6 +1,6 @@
-import { Star, ImageIcon } from "lucide-react";
+import { ImageIcon } from "lucide-react";
 import type { Testimonial } from "@/app/types/testimonial.type";
-import { PlatformBadge } from "./PlatformBadge";
+
 
 /**
  * Renders a card for a single testimonial.

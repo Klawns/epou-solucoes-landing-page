@@ -2,7 +2,6 @@ import {
   Laptop,
   Monitor,
   Smartphone,
-  Store,
   Users,
   Wrench,
 } from "lucide-react";

@@ -28,7 +28,7 @@ export default function OfferedServices() {
         </div>
 
         <ul className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {ServicesData.map((service, index) => (
+          {ServicesData.map((service) => (
             <OfferedServiceCard key={service.id} {...service} />
           ))}
         </ul>
