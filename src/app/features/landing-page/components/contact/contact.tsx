@@ -221,7 +221,7 @@ export default function Contact() {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <a
-              href="tel:+559999127314"
+                
               className="flex flex-col items-center p-8 bg-primary-foreground/5 rounded-2xl hover:bg-primary-foreground/10 transition-colors duration-300 backdrop-blur-sm"
             >
               <div className="w-14 h-14 rounded-full bg-primary-foreground/10 flex items-center justify-center mb-4">

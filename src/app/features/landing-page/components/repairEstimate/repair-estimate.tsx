@@ -174,7 +174,7 @@ export default function RepairEstimate() {
                   className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-12"
                   asChild
                 >
-                  <a href="#contato">Obter serviço</a>
+                  <a href="tel:+559999127314">Obter serviço</a>
                 </Button>
               </CardContent>
             </Card>
