@@ -1,16 +1,9 @@
-import {
-  EqualApproximately,
-  ShoppingBasket,
-  Smartphone,
-  Sparkles,
-  Users,
-} from "lucide-react";
 
 import fachada from "../assets/fachada.jpg";
 import equipamentos from "../assets/alguns_aparelhos.jpeg";
-import equipe from "../assets/equipe.jpeg";
 import acessorios from "../assets/acessorios.jpeg";
 import celular_desmontado from "../assets/telefone_desmontado.jpeg";
+import maquina_laser from "../assets/maquina_laser.jpeg";
 
 /**
  * An array of objects representing items in the gallery.
@@ -39,16 +32,10 @@ export const galeryItems = [
     orientation: "vertical",
   },
   {
-    id: 3,
-    title: "Equipe Especializada",
-    description: "Técnicos certificados Apple",
-    icon: equipe,
-    orientation: "horizontal",
-  },
-  {
     id: 4,
     title: "Especialistas em iPhone e Androids",
-    description: "Reparo especializado em iPhone e Androids",
+    description:
+      "Reparo especializado para todos os modelos de iPhone e Androids.",
     icon: celular_desmontado,
     orientation: "vertical",
   },
@@ -65,7 +52,7 @@ export const galeryItems = [
     title: "Gravação à laser",
     description:
       "Personalize seu smartphone ou outro dispositivo com uma gravação à laser de alta precisão.",
-    icon: Sparkles,
-    
+    icon: maquina_laser,
+    orientation: "vertical"
   },
 ];

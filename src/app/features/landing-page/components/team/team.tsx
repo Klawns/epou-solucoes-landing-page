@@ -1,5 +1,7 @@
+import { Users } from "lucide-react";
 import { Team as TeamData } from "@/app/constants/team";
 import TeamCard from "@/app/features/landing-page/components/team/components/TeamCard.tsx";
+import teamImage from "@/app/assets/equipe.jpeg";
 
 /**
  * Renders the section of the landing page that introduces the team members.
@@ -25,6 +27,16 @@ export default function Team() {
             Profissionais qualificados e prontos para atender você com
             excelência.
           </p>
+        </div>
+
+        {/* Imagem da Equipe */}
+        <div className="mb-16">
+          <img
+            src={teamImage}
+            alt="Nossa Equipe Reunida"
+            className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg object-cover"
+            style={{ aspectRatio: "16/9" }}
+          />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
