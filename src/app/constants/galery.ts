@@ -1,7 +1,7 @@
 import {
   Laptop,
-  Monitor,
-  Smartphone,
+  ShoppingBasket,
+  Sparkles,
   Users,
   Wrench,
 } from "lucide-react";
@@ -26,7 +26,7 @@ export const galeryItems = [
   },
   {
     id: 2,
-    title: "Área de Trabalho",
+    title: "Bancada",
     description: "Equipamentos de última geração",
     icon: Wrench,
   },
@@ -39,19 +39,19 @@ export const galeryItems = [
   {
     id: 4,
     title: "Dispositivos",
-    description: "Trabalhamos com todos os modelos",
+    description: "Trabalhamos com todos os modelos de iphone ",
     icon: Laptop,
   },
   {
     id: 5,
-    title: "Smartphones",
-    description: "Reparos em celulares de todas as marcas",
-    icon: Smartphone,
+    title: "Acessórios",
+    description: "Proteja e potencialize seu dispositivo com nossa vasta gama de acessórios de alta qualidade.",
+    icon: ShoppingBasket,
   },
   {
     id: 6,
-    title: "Monitores",
-    description: "Manutenção em displays e telas",
-    icon: Monitor,
+    title: "Gravação à laser",
+    description: "Personalize seu smartphone ou outro dispositivo com uma gravação à laser de alta precisão.",
+    icon: Sparkles,
   },
 ];
