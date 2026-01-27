@@ -18,36 +18,36 @@ export const Team: TeamCardProps[] = [
     id: 1,
     photoUrl: null,
     personName: "Daniel Martins",
-    position: "Especialista Apple",
+    position: "Especialista em celulares",
     description:
-      "Técnico certificado com 5 anos de experiência em reparos de iPhone e MacBook. Apaixonado por tecnologia e soluções precisas.",
+      "Profissional focado em diagnósticos e reparos de smartphones, garantindo agilidade e precisão na solução de problemas do seu celular.",
     phone: "(11) 99999-1111",
   },
   {
     id: 2,
     photoUrl: null,
-    personName: "Cleiton Pettenom",
-    position: "Técnica Android & Tablets",
+    personName: "Cleyton Pettenom",
+    position: "Especialista em Celulares e Macbooks",
     description:
-      "Especialista em hardware Samsung e Motorola. Realiza trocas de vidro e reparos em placas com agilidade e qualidade.",
+      "Técnico versátil com domínio em manutenção de celulares e MacBooks, realizando desde reparos de placa até substituição de componentes.",
     phone: "(11) 99999-2222",
   },
   {
     id: 3,
     photoUrl: null,
     personName: "Eneti Martinho",
-    position: "Gerente de Atendimento",
+    position: "Especialista em tablets e customização à laser",
     description:
-      "Responsável por garantir a melhor experiência para o cliente, desde o primeiro contato até a entrega do dispositivo.",
+      "Especialista na recuperação de tablets e na personalização exclusiva de dispositivos com tecnologia de gravação a laser.",
     phone: "(11) 99999-3333",
   },
   {
     id: 4,
     photoUrl: null,
     personName: "Jefferson Nascimento",
-    position: "Gerente de Atendimento",
+    position: "Especialista em troca de telas, vidros e muito mais",
     description:
-      "Responsável por garantir a melhor experiência para o cliente, desde o primeiro contato até a entrega do dispositivo.",
+      "Expert em substituição de telas e vidros, devolvendo a integridade do seu aparelho com acabamento impecável e qualidade original.",
     phone: "(11) 99999-3333",
   },
 ];

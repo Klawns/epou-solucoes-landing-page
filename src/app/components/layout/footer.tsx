@@ -63,14 +63,14 @@ export default function Footer() {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contato@epousolucoes.com"
+                href="mailto:epousolucoes@gmail.com"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
               </a>
               <a
-                href="tel:+5511999999999"
+                href="tel:+5599991275314"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
                 aria-label="Telefone"
               >
