@@ -42,7 +42,7 @@ export const OfferedServices: OfferedService[] = [
 
   {
     id: 4,
-    title: "Customização a Laser",
+    title: "Gravação a Laser",
     description:
       "Personalização de copos, garrafas e outros objetos com gravação a laser de alta precisão.",
     Icon: Zap,
