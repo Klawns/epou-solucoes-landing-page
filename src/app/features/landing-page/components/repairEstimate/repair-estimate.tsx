@@ -87,7 +87,10 @@ export default function RepairEstimate() {
               </label>
               <Select value={productBrand} onValueChange={setProductBrand}>
                 <SelectTrigger className="bg-gray-800 border-gray-700 text-white rounded-xl">
-                  <SelectValue placeholder="Selecione a marca" className="text-white"/>
+                  <SelectValue
+                    placeholder="Selecione a marca"
+                    className="text-white"
+                  />
                 </SelectTrigger>
                 <SelectContent className="bg-gray-800 border-gray-700">
                   {productBrands.map((b) => (
@@ -161,9 +164,9 @@ export default function RepairEstimate() {
                   Seu custo estimado
                 </h3>
                 <p className="text-gray-400 text-sm mb-6">
-                  Analisaremos a sua cobertura de serviço
+                  Os valores são estimativas e podem
                   <br />
-                  para confirmar a taxa de serviço final.
+                  variar de acordo com a condição do dispositivo.
                 </p>
                 <div className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight">
                   {formatCurrency(estimatedPrice)}
@@ -174,16 +177,14 @@ export default function RepairEstimate() {
                   className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-12"
                   asChild
                 >
-                  <a href="https://wa.me/559999127314">Obter serviço</a>
+                  <a href="https://wa.me/5599999127314/?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20desejo%20fazer%20um%20or%C3%A7amento.">Entre em contato </a>
                 </Button>
+                <p className="text-gray-400 text-1x1 mt-4">
+                  Para analisarmos melhor o orçamento do seu dispositivo.
+                </p>
               </CardContent>
             </Card>
           )}
-
-          <p className="text-center text-xs text-gray-500 mt-6">
-            * Os valores são estimativas e podem variar de acordo com a condição
-            do dispositivo.
-          </p>
         </div>
       </div>
     </section>

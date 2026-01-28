@@ -30,7 +30,6 @@ export default function Footer() {
       { label: "Sobre Nós", href: "#equipe" },
       { label: "Nossa Equipe", href: "#equipe" },
       { label: "Galeria", href: "#galeria" },
-      { label: "Depoimentos", href: "#feedback" },
       { label: "Contato", href: "#contato" },
     ],
   };

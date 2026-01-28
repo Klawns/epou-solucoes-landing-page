@@ -239,7 +239,7 @@ export default function Contact() {
             <ContactCard
               icon={whatsapp_logo}
               title="Whatsapp"
-              description="(99) 99127-5314"
+              description="Fale Conosco"
               href="https://wa.me/55999991275314?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento.%0A"
               target="_blank"
               rel="noopener noreferrer"

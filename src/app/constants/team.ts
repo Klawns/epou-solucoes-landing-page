@@ -18,36 +18,36 @@ export const Team: TeamCardProps[] = [
     id: 1,
     photoUrl: null,
     personName: "Daniel Martins",
-    position: "Especialista em celulares",
+    position: "Técnico Especialista em Smartphones",
     description:
-      "Profissional focado em diagnósticos e reparos de smartphones, garantindo agilidade e precisão na solução de problemas do seu celular.",
-    phone: "(11) 99999-1111",
+      "Profissional versátil focado em diagnósticos e reparos gerais de smartphones, garantindo agilidade e precisão na solução de qualquer problema.",
+    phone: null,
   },
   {
     id: 2,
     photoUrl: null,
     personName: "Cleyton Pettenom",
-    position: "Especialista em Celulares e Macbooks",
+    position: "Especialista em MacBooks e Hardware",
     description:
-      "Técnico versátil com domínio em manutenção de celulares e MacBooks, realizando desde reparos de placa até substituição de componentes.",
-    phone: "(11) 99999-2222",
+      "Técnico com domínio completo em celulares e especialização em MacBooks, realizando desde reparos avançados.",
+    phone: null,
   },
   {
     id: 3,
     photoUrl: null,
     personName: "Eneti Martinho",
-    position: "Especialista em tablets e customização à laser",
+    position: "Especialista em Laser e Dispositivos",
     description:
-      "Especialista na recuperação de tablets e na personalização exclusiva de dispositivos com tecnologia de gravação a laser.",
-    phone: "(11) 99999-3333",
+      "Focada na personalização e gravação a laser de alta precisão, além de atuar na manutenção técnica especializada de tablets e smartphones.",
+    phone: null,
   },
   {
     id: 4,
     photoUrl: null,
     personName: "Jefferson Nascimento",
-    position: "Especialista em troca de telas, vidros e muito mais",
+    position: "Especialista em Recondicionamento de Telas",
     description:
-      "Expert em substituição de telas e vidros, devolvendo a integridade do seu aparelho com acabamento impecável e qualidade original.",
-    phone: "(11) 99999-3333",
+      "Expert na troca de vidros e recondicionamento de telas, mantendo a originalidade do display. Também atua com personalização a laser.",
+    phone: null,
   },
 ];

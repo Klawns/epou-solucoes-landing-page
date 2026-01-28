@@ -17,7 +17,7 @@ export interface TeamCardProps {
   /**
    * The team member's position or role in the company.
    */
-  position: string;
+  position: string | null;
   /**
    * A brief description of the team member's skills and experience.
    */
@@ -25,5 +25,5 @@ export interface TeamCardProps {
   /**
    * The team member's contact phone number.
    */
-  phone: string;
+  phone: string | null;
 }
