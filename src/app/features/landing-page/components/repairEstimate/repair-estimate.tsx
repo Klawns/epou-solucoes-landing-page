@@ -1,4 +1,4 @@
-import { Card, CardContent } from "@/app/components/ui/card";
+import RepairEstimateResultCard from "@/app/features/landing-page/components/repairEstimate/repairEstimativeCard";
 import { Button } from "@/app/components/ui/button";
 import {
   Select,
@@ -32,11 +32,28 @@ export default function RepairEstimate() {
     showEstimate,
     availableModels,
     estimatedPrice,
+    isCustomEstimate,
     handleGetEstimate,
+    handleCustomEstimate,
     formatCurrency,
     serviceTypes,
     productBrands,
   } = useRepairEstimate();
+
+  const selectedService = serviceTypes.find((s) => s.id === serviceType);
+  const selectedBrand = productBrands.find((b) => b.id === productBrand);
+  const selectedModel = availableModels.find((m) => m.id === model);
+
+  const whatsappMessage = isCustomEstimate
+    ? `Olá! Vim pelo site e gostaria de solicitar um orçamento. Poderiam me ajudar?`
+    : `Olá! Vim pelo site e gostaria de verificar esse orçamento:
+
+Serviço: ${selectedService?.label || ""}
+Dispositivo: ${selectedBrand?.label || ""} - ${selectedModel?.label || ""}
+
+Poderiam me ajudar?`;
+
+  const whatsappLink = `https://wa.me/55999991275314?text=${encodeURIComponent(whatsappMessage)}`;
 
   return (
     <section id="orçamento" className="py-20 bg-gray-900 text-gray-100">
@@ -137,11 +154,12 @@ export default function RepairEstimate() {
             </div>
 
             <a
-              href="#contato"
-              className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors"
+
+              className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors cursor-pointer"
+              onClick={handleCustomEstimate}
             >
               <HelpCircle className="w-4 h-4 mr-1" />
-              Precisa de ajuda para identificar seu modelo?
+              Não encontrou seu modelo de dispositivo ou serviço?
               <ChevronRight className="w-4 h-4 ml-1" />
             </a>
           </div>
@@ -157,35 +175,13 @@ export default function RepairEstimate() {
           </Button>
 
           {/* Result */}
-          {showEstimate && estimatedPrice && (
-            <Card className="bg-gray-800/50 border-gray-700 animate-fade-up">
-              <CardContent className="pt-8 pb-8 text-center">
-                <h3 className="text-xl font-semibold text-white mb-2">
-                  Seu custo estimado
-                </h3>
-                <p className="text-gray-400 text-sm mb-6">
-                  Os valores são estimativas e podem
-                  <br />
-                  variar de acordo com a condição do dispositivo.
-                </p>
-                <div className="text-5xl md:text-6xl font-bold text-white mb-8 tracking-tight">
-                  {formatCurrency(estimatedPrice)}
-                </div>
-                <Button
-                  variant="default"
-                  size="lg"
-                  className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-12"
-                  asChild
-                >
-                  <a href="https://wa.me/55999991275314?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20para%20um%20or%C3%A7amento.">
-                    Entre em contato
-                  </a>
-                </Button>
-                <p className="text-gray-400 text-1x1 mt-4">
-                  Para analisarmos melhor o orçamento do seu dispositivo.
-                </p>
-              </CardContent>
-            </Card>
+          {showEstimate && (estimatedPrice || isCustomEstimate) && (
+            <RepairEstimateResultCard
+              isCustomEstimate={isCustomEstimate}
+              estimatedPrice={estimatedPrice}
+              formatCurrency={formatCurrency}
+              whatsappLink={whatsappLink}
+            />
           )}
         </div>
       </div>

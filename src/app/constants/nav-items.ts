@@ -1,5 +1,3 @@
-
-
 /**
  * An array of objects representing the navigation items for the website.
  *
@@ -38,11 +36,13 @@ export const NavItems = [
     label: "FAQ",
   },
   {
-    href: "#feedback",
-    label: "Feedback",
-  },
-    {
     href: "#contato",
     label: "Contato",
   },
 ];
+{
+  /*   {
+    href: "#feedback",
+    label: "Feedback",
+  }, */
+}

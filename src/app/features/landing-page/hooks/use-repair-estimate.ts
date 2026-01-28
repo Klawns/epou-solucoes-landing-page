@@ -14,29 +14,11 @@ import {
  * @returns {number | null} The calculated price, or null if no price is available.
  */
 const getPrice = (serviceId: string, modelId: string): number | null => {
-  const telaPrice = basePrices.tela[modelId];
-  const bateriaPrice = basePrices.bateria[modelId];
-
-  if (!telaPrice) return null;
-
-  switch (serviceId) {
-    case "tela":
-      return telaPrice;
-    case "tela_traseira":
-      return Math.round(telaPrice * 1.4);
-    case "bateria":
-      return bateriaPrice || Math.round(telaPrice * 0.25);
-    case "conector":
-      return Math.round(telaPrice * 0.2);
-    case "botao":
-      return Math.round(telaPrice * 0.15);
-    case "camera":
-      return Math.round(telaPrice * 0.35);
-    case "alto_falante":
-      return Math.round(telaPrice * 0.12);
-    default:
-      return null;
+  const prices = basePrices as any;
+  if (prices[serviceId] && prices[serviceId][modelId]) {
+    return prices[serviceId][modelId];
   }
+  return null;
 };
 
 /**
@@ -77,6 +59,10 @@ export const useRepairEstimate = () => {
     return getPrice(serviceType, model);
   }, [serviceType, model]);
 
+  const isCustomEstimate = useMemo(() => {
+    return serviceType === "outro" || model === "outro";
+  }, [serviceType, model]);
+
   const handleBrandChange = (value: string) => {
     setProductBrand(value);
     setModel("");
@@ -87,7 +73,7 @@ export const useRepairEstimate = () => {
     setServiceType(value);
     setShowEstimate(false);
   };
-  
+
   const handleModelChange = (value: string) => {
     setModel(value);
     setShowEstimate(false);
@@ -97,6 +83,13 @@ export const useRepairEstimate = () => {
     if (serviceType && productBrand && model) {
       setShowEstimate(true);
     }
+  };
+
+  const handleCustomEstimate = () => {
+    setServiceType("outro");
+    setProductBrand("iphone"); // Define um padrão para evitar estado vazio
+    setModel("outro");
+    setShowEstimate(true);
   };
 
   return {
@@ -109,7 +102,9 @@ export const useRepairEstimate = () => {
     showEstimate,
     availableModels,
     estimatedPrice,
+    isCustomEstimate,
     handleGetEstimate,
+    handleCustomEstimate,
     formatCurrency,
     serviceTypes,
     productBrands,
