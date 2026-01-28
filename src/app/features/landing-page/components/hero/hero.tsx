@@ -24,12 +24,14 @@ export default function Hero() {
             Assistência Técnica Especializada
           </span>
 
-          <h1 className="animate-fade-up-delay-1 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 text-balance flex items-center justify-center gap-4">
-            Épou Soluções
+          <h1 className="animate-fade-up-delay-1 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 flex flex-col md:flex-row items-center justify-center gap-4">
+            <span className="text-balance order-2 md:order-1">
+              Épou Soluções
+            </span>
             <img
               src={AppleLogo}
               alt="Apple Logo"
-              className="h-16 w-16 md:h-20 md:w-20"
+              className="h-16 w-16 md:h-20 md:w-20 order-1 md:order-2"
             />
           </h1>
 
