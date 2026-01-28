@@ -215,8 +215,7 @@ export default function Contact() {
               Precisa de Reparo?
             </h2>
             <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-              Seu dispositivo quebrou? Entre em contato e faça um orçamento sem
-              compromisso.
+              Seu dispositivo quebrou? Entre em contato e faça um orçamento.
             </p>
           </div>
 
