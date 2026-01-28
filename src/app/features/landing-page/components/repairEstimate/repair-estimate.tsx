@@ -177,7 +177,7 @@ export default function RepairEstimate() {
                   className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-8 h-12"
                   asChild
                 >
-                  <a href="https://wa.me/55999991275314?text=Ol%C3%A1%21%20Vim%20pelo%20site%20e%20desejo%20fazer%20um%20or%C3%A7amento.">
+                  <a href="https://wa.me/55999991275314?text=Ol%C3%A1%21%20Tudo%20bem%3F%20Vim%20pelo%20site%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20para%20um%20or%C3%A7amento.">
                     Entre em contato
                   </a>
                 </Button>
