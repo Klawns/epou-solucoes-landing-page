@@ -1,6 +1,6 @@
 import { NavItems } from "@/app/constants/nav-items";
 import { Phone } from "lucide-react";
-import InstagramLogo from "@/app/assets/instagram.svg";
+import InstagramLogo from "@/app/assets/logos/instagram.svg";
 
 /**
  * Renders the header section of the website.
@@ -45,7 +45,11 @@ export default function Header() {
             <img src={InstagramLogo} alt="Instagram Logo" className="h-5 w-5" />
           </a>
 
-          <a className="cursor-pointer hidden rounded-full sm:flex items-center gap-2 text-sm font-medium hover:text-muted-foreground transition-colors">
+          <a
+            className="cursor-pointer hidden rounded-full sm:flex items-center gap-2 text-sm font-medium hover:text-muted-foreground transition-colors"
+            href="tel:+55999991275314"
+            aria-label="Telefone"
+          >
             <Phone className="w-4.5 h-4.5" />
             (99) 99127-5314
           </a>

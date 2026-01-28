@@ -1,6 +1,6 @@
 import { Button } from "@/app/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import AppleLogo from "@/app/assets/apple.svg";
+import AppleLogo from "@/app/assets/logos/apple.svg";
 
 /**
  * Renders the main hero section of the landing page.

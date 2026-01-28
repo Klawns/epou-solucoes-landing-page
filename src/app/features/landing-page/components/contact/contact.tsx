@@ -1,5 +1,6 @@
-import { Button } from "@/app/components/ui/button";
 import { Instagram, Mail, Phone } from "lucide-react";
+import { ContactCard } from "./components/contact-card";
+import whatsapp_logo from "@/app/assets/logos/whatsapp-white-icon.svg";
 
 /**
  * Renders the contact section of the landing page.
@@ -219,50 +220,41 @@ export default function Contact() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <a
-                
-              className="flex flex-col items-center p-8 bg-primary-foreground/5 rounded-2xl hover:bg-primary-foreground/10 transition-colors duration-300 backdrop-blur-sm"
-            >
-              <div className="w-14 h-14 rounded-full bg-primary-foreground/10 flex items-center justify-center mb-4">
-                <Phone className="w-6 h-6" />
-              </div>
-              <h3 className="font-semibold mb-1">Telefone</h3>
-              <p className="text-primary-foreground/70 text-sm">
-                (99) 99127-5314
-              </p>
-            </a>
+          <div className="grid md:grid-cols-4 gap-8 mb-12">
+            <ContactCard
+              icon={Phone}
+              title="Telefone"
+              description="(99) 99127-5314"
+              href="tel:+55999991275314"
+            />
 
-            <a
-              href="https://instagram.com/epousolucoes"
+            <ContactCard
+              icon={Instagram}
+              title="Instagram"
+              description="@epousolucoes"
+              href="https://instagram.com/m/epousolucoes"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex flex-col items-center p-8 bg-primary-foreground/5 rounded-2xl hover:bg-primary-foreground/10 transition-colors duration-300 backdrop-blur-sm"
-            >
-              <div className="w-14 h-14 rounded-full bg-primary-foreground/10 flex items-center justify-center mb-4">
-                <Instagram className="w-6 h-6" />
-              </div>
-              <h3 className="font-semibold mb-1">Instagram</h3>
-              <p className="text-primary-foreground/70 text-sm">
-                @epousolucoes
-              </p>
-            </a>
+            />
 
-            <a
+            <ContactCard
+              icon={whatsapp_logo}
+              title="Whatsapp"
+              description="(99) 99127-5314"
+              href="https://wa.me/55999991275314?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento.%0A"
+              target="_blank"
+              rel="noopener noreferrer"
+            />
+
+            <ContactCard
+              icon={Mail}
+              title="Email"
+              description="epousolucoes@gmail.com"
               href="mailto:epousolucoes@gmail.com"
-              className="flex flex-col items-center p-8 bg-primary-foreground/5 rounded-2xl hover:bg-primary-foreground/10 transition-colors duration-300 backdrop-blur-sm"
-            >
-              <div className="w-14 h-14 rounded-full bg-primary-foreground/10 flex items-center justify-center mb-4">
-                <Mail className="w-6 h-6" />
-              </div>
-              <h3 className="font-semibold mb-1">Email</h3>
-              <p className="text-primary-foreground/70 text-sm">
-                epousolucoes@gmail.com
-              </p>
-            </a>
+            />
           </div>
 
-          <div className="text-center">
+          {/*          <div className="text-center">
             <Button
               variant="outline"
               size="xl"
@@ -270,14 +262,14 @@ export default function Contact() {
               asChild
             >
               <a
-                href="https://wa.me/559999127314"
+                href="https://wa.me/55999991275314?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento.%0A"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Fale pelo WhatsApp
               </a>
             </Button>
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

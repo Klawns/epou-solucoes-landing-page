@@ -70,7 +70,7 @@ export default function Footer() {
                 <Mail className="w-5 h-5" />
               </a>
               <a
-                href="tel:+5599991275314"
+                href="tel:+55999991275314"
                 className="w-10 h-10 rounded-full bg-background/10 hover:bg-background/20 flex items-center justify-center transition-colors"
                 aria-label="Telefone"
               >
@@ -127,7 +127,7 @@ export default function Footer() {
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-muted-foreground flex-shrink-0" />
                 <a
-                  href="tel:+559999127314"
+                  href="tel:+55999991275314"
                   className="text-sm text-muted-foreground hover:text-background transition-colors"
                 >
                   (99) 99127-5314
