@@ -240,7 +240,7 @@ export default function Contact() {
               icon={whatsapp_logo}
               title="Whatsapp"
               description="Fale Conosco"
-              href="https://wa.me/55999991275314?text=Ol%C3%A1%21%20Quero%20um%20or%C3%A7amento.%0A"
+              href="https://wa.me/55999991275314"
               target="_blank"
               rel="noopener noreferrer"
             />
