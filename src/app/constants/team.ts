@@ -29,7 +29,7 @@ export const Team: TeamCardProps[] = [
     personName: "Cleyton Pettenom",
     position: "Especialista em MacBooks e Hardware",
     description:
-      "Técnico com domínio completo em celulares e especialização em MacBooks, realizando desde reparos avançados.",
+      "Técnico com domínio completo em celulares e especialização em MacBooks, realizando desde reparos simples aos mais complexos.",
     phone: null,
   },
   {
@@ -47,7 +47,7 @@ export const Team: TeamCardProps[] = [
     personName: "Jefferson Nascimento",
     position: "Especialista em Recondicionamento de Telas",
     description:
-      "Expert na troca de vidros e recondicionamento de telas, mantendo a originalidade do display. Também atua com personalização a laser.",
+      "Expert na troca de vidros e recondicionamento de telas. Também atua com personalização a laser e manutenção técnica de celulares.",
     phone: null,
   },
 ];
