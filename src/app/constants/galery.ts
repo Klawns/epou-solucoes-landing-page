@@ -20,7 +20,7 @@ export const galeryItems: GaleryItem[] = [
     id: 1,
     title: "Fachada da Loja",
     description:
-      "Visite nossa loja moderna e bem localizada no coração da cidade.",
+      "Uma estrutura moderna e acolhedora, pensada para oferecer a melhor experiência de atendimento aos nossos clientes.",
     icon: fachada,
     orientation: "vertical",
   },
@@ -52,7 +52,7 @@ export const galeryItems: GaleryItem[] = [
     id: 6,
     title: "Gravação à laser",
     description:
-      "Personalize seu smartphone ou outro dispositivo com uma gravação à laser de alta precisão.",
+      "Transforme seus itens com nossa tecnologia de gravação a laser, garantindo personalização exclusiva e acabamento impecável.",
     icon: maquina_laser,
     orientation: "vertical",
   },
