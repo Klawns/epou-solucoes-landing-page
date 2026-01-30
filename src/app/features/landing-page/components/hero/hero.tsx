@@ -22,6 +22,7 @@ export default function Hero() {
         <div className="max-w-4xl mx-auto text-center">
           <span className="animate-fade-up inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground mb-8">
             Assistência Técnica Especializada
+
           </span>
 
           <h1 className="animate-fade-up-delay-1 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 flex flex-col md:flex-row items-center justify-center gap-4">
@@ -36,9 +37,7 @@ export default function Hero() {
           </h1>
 
           <p className="animate-fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance">
-            Especialistas em manutenção de celulares, iPads, MacBooks e
-            dispositivos Apple. Conserto rápido, qualidade garantida e
-            atendimento de excelência.
+            Especialistas em manutenção de iPhones, smartphones Android, iPads e MacBooks, com diagnóstico preciso, reparos seguros e atendimento que prioriza transparência e confiança.
           </p>
 
           <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -47,7 +46,7 @@ export default function Hero() {
             </Button>
 
             <Button variant="outline" size="lg" asChild>
-              <a href="#equipe">Conheça a Equipe</a>
+              <a href="#contato">Solicitar Orçamento</a>
             </Button>
           </div>
           <a
