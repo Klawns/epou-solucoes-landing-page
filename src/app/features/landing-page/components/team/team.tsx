@@ -16,15 +16,16 @@ export default function Team() {
     <section id="equipe" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
+          {/*
           <span className="inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground mb-4">
             Conheça
           </span>
+          */}
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             Nossa Equipe
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Profissionais qualificados e prontos para atender você com
-            excelência.
+            Profissionais qualificados e experientes, preparados para oferecer soluções técnicas com excelência, transparência e responsabilidade.
           </p>
         </div>
 

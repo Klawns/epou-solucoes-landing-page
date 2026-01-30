@@ -17,37 +17,37 @@ export const Team: TeamCardProps[] = [
   {
     id: 1,
     photoUrl: null,
-    personName: "Daniel Martins",
-    position: "Técnico Especialista em Smartphones",
+    personName: "Cleyton Pettenon",
+    position: "Especialista em Macbooks, Hardware e Recondicionamento de Telas",
     description:
-      "Profissional versátil focado em diagnósticos e reparos gerais de smartphones, garantindo agilidade e precisão na solução de qualquer problema.",
+      "Técnico com ampla experiência em manutenção de celulares e especialização em MacBooks. Atua em reparos avançados de hardware, incluindo placa lógica, além de recondicionamento de telas e soluções técnicas de alta complexidade..",
     phone: null,
   },
   {
     id: 2,
     photoUrl: null,
-    personName: "Cleyton Pettenom",
-    position: "Especialista em MacBooks e Hardware",
+    personName: "Gabriela Coelho",
+    position: "Responsável Administrativa e Financeira",
     description:
-      "Técnico com domínio completo em celulares e especialização em MacBooks, realizando desde reparos simples aos mais complexos.",
+      "Responsável pela gestão administrativa e financeira da Épou Soluções, garantindo organização, transparência nos processos e um atendimento estruturado do início ao fim. Atua diretamente no controle de qualidade dos serviços, relacionamento com clientes e suporte à equipe técnica.",
     phone: null,
   },
   {
     id: 3,
     photoUrl: null,
-    personName: "Eneti Martinho",
-    position: "Especialista em Laser e Dispositivos",
+    personName: "Daniel Martins",
+    position: "Especialista Técnico em Smartphones",
     description:
-      "Focada na personalização e gravação a laser de alta precisão, além de atuar na manutenção técnica especializada de tablets e smartphones.",
+      "Profissional especializado em diagnóstico e reparo de smartphones, atuando com troca de telas, baterias e componentes internos, sempre com foco em qualidade, segurança e durabilidade dos serviços.",
     phone: null,
   },
   {
     id: 4,
     photoUrl: null,
-    personName: "Jefferson Nascimento",
-    position: "Especialista em Recondicionamento de Telas",
+    personName: "Eneti Martinho",
+    position: "Atendimento, Laser e Dispositivos",
     description:
-      "Expert na troca de vidros e recondicionamento de telas. Também atua com personalização a laser e manutenção técnica de celulares.",
+      "Responsável pelo atendimento ao cliente, personalização e gravação a laser de alta precisão. Atua também na manutenção técnica de tablets e smartphones, garantindo qualidade, funcionalidade e acabamento de alto padrão em cada serviço prestado.",
     phone: null,
   },
 ];
