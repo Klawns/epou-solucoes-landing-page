@@ -15,15 +15,18 @@ export default function OfferedServices() {
     <section id="serviços" className="py-24 bg-secondary/50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
+          
+          {/*          
           <span className="inline-block px-4 py-2 bg-background rounded-full text-sm font-medium text-muted-foreground mb-4">
             O que fazemos
           </span>
+          */}
+
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             Nossos Serviços
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Consertamos e cuidamos dos seus dispositivos com peças de qualidade
-            e mão de obra especializada.
+            Oferecemos soluções completas em assistência técnica para dispositivos eletrônicos, utilizando peças de qualidade e mão de obra especializada para garantir o melhor desempenho do seu aparelho.
           </p>
         </div>
 

@@ -22,21 +22,21 @@ export const OfferedServices: OfferedService[] = [
     id: 1,
     title: "Reparo de Celulares",
     description:
-      "Reparo de iPhones e smartphones Android. Troca de tela, bateria, conectores e muito mais.",
+      "Manutenção especializada em iPhones e smartphones Android. Realizamos troca de telas, baterias, conectores, alto-falantes, câmeras e outros componentes, sempre com diagnóstico preciso e garantia.",
     Icon: Smartphone,
   },
   {
     id: 2,
-    title: "Reparo de iPads & Tablets",
+    title: "Reparo de iPads e Tablets",
     description:
-      "Manutenção completa de iPads e tablets. Substituição de telas, baterias e reparos gerais.",
+      "Serviços completos para iPads e tablets, incluindo substituição de telas, baterias e correção de falhas técnicas, garantindo o funcionamento ideal do dispositivo",
     Icon: TabletIcon,
   },
   {
     id: 3,
     title: "Reparo de MacBooks",
     description:
-      "Assistência técnica especializada em MacBooks. Teclado, tela, placa lógica e upgrades.",
+      "Assistência técnica especializada em MacBooks, com serviços que vão desde manutenção preventiva até reparos avançados em hardware, como teclado, tela, placa lógica e upgrades.",
     Icon: Laptop,
   },
 
@@ -44,21 +44,21 @@ export const OfferedServices: OfferedService[] = [
     id: 4,
     title: "Gravação a Laser",
     description:
-      "Personalização de copos, garrafas e outros objetos com gravação a laser de alta precisão.",
+      "Personalização de copos, garrafas e outros objetos por meio de gravação a laser de alta precisão, ideal para presentes personalizados e brindes exclusivos.",
     Icon: Zap,
   },
   {
     id: 5,
     title: "Venda de Acessórios",
     description:
-      "Encontre capas, películas, carregadores, fones de ouvido e outros acessórios para seu dispositivo.",
+      "Trabalhamos com capas, películas, carregadores, fones de ouvido e diversos acessórios para celulares e dispositivos eletrônicos, sempre priorizando qualidade e compatibilidade.",
     Icon: Headphones,
   },
   {
     id: 6,
     title: "Reparos Gerais",
     description:
-      "Diagnóstico completo e reparo de qualquer problema em seus dispositivos eletrônicos.",
+      "Diagnóstico completo e reparo de falhas eletrônicas em diversos tipos de dispositivos, oferecendo soluções eficientes para problemas técnicos variados.",
     Icon: Wrench,
   },
 ];
