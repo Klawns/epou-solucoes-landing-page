@@ -16,11 +16,11 @@ createRoot(document.getElementById("root")!).render(
   </StrictMode>,
 );
 
-// Register service worker if available and in production
-// if (typeof window !== "undefined" && "serviceWorker" in navigator) {
-//   window.addEventListener("load", () => {
-//     if (import.meta.env.PROD) {
-//       navigator.serviceWorker.register("/sw.js").catch(() => {});
-//     }
-//   });
-// }
+// Unregister existing service workers to fix cache issues
+if (typeof window !== "undefined" && "serviceWorker" in navigator) {
+  navigator.serviceWorker.getRegistrations().then((registrations) => {
+    for (const registration of registrations) {
+      registration.unregister();
+    }
+  });
+}
