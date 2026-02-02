@@ -20,7 +20,7 @@ export const Team: TeamCardProps[] = [
     personName: "Cleyton Pettenon",
     position: "Especialista em Macbooks, Hardware e Recondicionamento de Telas",
     description:
-      "Técnico com ampla experiência em manutenção de celulares e especialização em MacBooks. Atua em reparos avançados de hardware, incluindo placa lógica, além de recondicionamento de telas e soluções técnicas de alta complexidade..",
+      "Técnico com ampla experiência em manutenção de celulares e especialização em MacBooks. Atua em reparos avançados de hardware, incluindo placa lógica, além de recondicionamento de telas e soluções técnicas de alta complexidade.",
     phone: null,
   },
   {
@@ -29,7 +29,7 @@ export const Team: TeamCardProps[] = [
     personName: "Gabriela Coelho",
     position: "Responsável Administrativa e Financeira",
     description:
-      "Responsável pela gestão administrativa e financeira da Épou Soluções, garantindo organização, transparência nos processos e um atendimento estruturado do início ao fim. Atua diretamente no controle de qualidade dos serviços, relacionamento com clientes e suporte à equipe técnica.",
+      "Responsável pela gestão administrativa e financeira da Épou Soluções, garantindo organização, transparência e um atendimento estruturado do início ao fim. Atua no controle de qualidade dos serviços, relacionamento com clientes e suporte à equipe técnica.",
     phone: null,
   },
   {
@@ -47,7 +47,7 @@ export const Team: TeamCardProps[] = [
     personName: "Eneti Martinho",
     position: "Atendimento, Laser e Dispositivos",
     description:
-      "Responsável pelo atendimento ao cliente, personalização e gravação a laser de alta precisão. Atua também na manutenção técnica de tablets e smartphones, garantindo qualidade, funcionalidade e acabamento de alto padrão em cada serviço prestado.",
+      "Atua no atendimento ao cliente e é responsável pela operação de gravação a laser, garantindo personalização com precisão, qualidade e acabamento profissional.",
     phone: null,
   },
 ];
