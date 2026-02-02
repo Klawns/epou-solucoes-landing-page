@@ -6,7 +6,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/app/components/ui/select";
-import { HelpCircle, ChevronRight } from "lucide-react";
 import { useRepairEstimate } from "@/app/features/landing-page/hooks/use-repair-estimate";
 
 /**

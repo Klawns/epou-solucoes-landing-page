@@ -1,8 +1,4 @@
-import type {
-  SelectItem,
-  ModelsByBrand,
-  BasePrices,
-} from "@/app/types/repair.type";
+import type { SelectItem, ModelsByBrand } from "@/app/types/repair.type";
 
 /**
  * An array of objects representing the available types of repair services.
