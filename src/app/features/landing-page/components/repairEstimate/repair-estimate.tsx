@@ -41,7 +41,7 @@ export default function RepairEstimate() {
 
   const whatsappMessage = isCustomEstimate
     ? `Olá! Vim pelo site da Épou Soluções e gostaria de solicitar uma análise técnica.\n\n Tipo de serviço: ${selectedService?.label || ""}\n Dispositivo: ${selectedBrand?.label || ""} – ${selectedModel?.label || ""}\n Relato do problema: ${description || "Descreva brevemente o problema do seu dispositivo (ex.: sofreu queda, entrou em contato com líquido, não liga, falha na tela, bateria descarregando rápido, etc.)."}\n\nPoderiam me ajudar, por favor?`
-    : `Olá! Vim pelo site da Épou Soluções e gostaria de solicitar uma análise técnica.\n\n\n Tipo de serviço: ${selectedService?.label || ""}\n Dispositivo: ${selectedBrand?.label || ""} – ${selectedModel?.label || ""}\n Relato do problema: ${description || "Descreva brevemente o problema do seu dispositivo (ex.: sofreu queda, entrou em contato com líquido, não liga, falha na tela, bateria descarregando rápido, etc.)."}\n\nPoderiam me ajudar, por favor?`;
+    : `Olá! Vim pelo site da Épou Soluções e gostaria de solicitar uma análise técnica.\n\n Tipo de serviço: ${selectedService?.label || ""}\n Dispositivo: ${selectedBrand?.label || ""} – ${selectedModel?.label || ""}\n Relato do problema: ${description || "Descreva brevemente o problema do seu dispositivo (ex.: sofreu queda, entrou em contato com líquido, não liga, falha na tela, bateria descarregando rápido, etc.)."}\n\nPoderiam me ajudar, por favor?`;
 
   const whatsappLink = `https://wa.me/55999991275314?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -175,10 +175,11 @@ export default function RepairEstimate() {
 
           <Button
             onClick={() => {
-              if (!serviceType || !productBrand || !model) return;
+              if (!serviceType || !productBrand || !model || !description)
+                return;
               window.open(whatsappLink, "_blank");
             }}
-            disabled={!serviceType || !productBrand || !model}
+            disabled={!serviceType || !productBrand || !model || !description}
             variant="default"
             size="lg"
             className="w-full mb-2 h-15 rounded-xl bg-blue-600 border-blue-600 text-white hover:bg-blue-700 disabled:opacity-50"

@@ -1,6 +1,6 @@
 import { Button } from "@/app/components/ui/button";
 import { ArrowDown } from "lucide-react";
-import AppleLogo from "@/app/assets/logos/apple.svg";
+import EpouLogo from "@/app/assets/logos/vetor nova logo épou.svg";
 
 /**
  * Renders the main hero section of the landing page.
@@ -20,24 +20,20 @@ export default function Hero() {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          <span className="animate-fade-up inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground mb-8">
+          <span className="animate-fade-up inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground relative z-20">
             Assistência Técnica Especializada em Imperatriz
-
           </span>
 
-          <h1 className="animate-fade-up-delay-1 text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 flex flex-col md:flex-row items-center justify-center gap-4">
-            <span className="text-balance order-2 md:order-1">
-              Épou Soluções
-            </span>
-            <img
-              src={AppleLogo}
-              alt="Apple Logo"
-              className="h-16 w-16 md:h-20 md:w-20 order-1 md:order-2"
-            />
-          </h1>
+          <img
+            src={EpouLogo}
+            alt="Logo Épou Soluções"
+            className="h-72 w-72 md:h-100 md:w-100 animate-fade-up mx-auto -my-16 md:-my-24 relative z-10"
+          />
 
-          <p className="animate-fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance">
-            Especialistas em manutenção de iPhones, smartphones Android, iPads e MacBooks, com diagnóstico preciso, reparos seguros e atendimento que prioriza transparência e confiança.
+          <p className="animate-fade-up-delay-2 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 text-balance relative z-20">
+            Especialistas em manutenção de iPhones, smartphones Android, iPads e
+            MacBooks, com diagnóstico preciso, reparos seguros e atendimento que
+            prioriza transparência e confiança.
           </p>
 
           <div className="animate-fade-up-delay-3 flex flex-col sm:flex-row items-center justify-center gap-4">

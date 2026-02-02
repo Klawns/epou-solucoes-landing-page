@@ -22,7 +22,7 @@ import {
 export default function Team() {
   return (
     <section id="equipe" className="py-24 bg-background">
-      <div className="container mx-auto px-6">
+      <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           {/*
           <span className="inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground mb-4">
@@ -67,7 +67,7 @@ export default function Team() {
                 {TeamData.map((team) => (
                   <CarouselItem
                     key={team.id}
-                    className={`pl-4 md:pl-6 min-w-0 shrink-0 grow-0 basis-[85%] md:basis-1/2 lg:basis-1/2 ${
+                    className={`pl-4 md:pl-6 min-w-0 shrink-0 grow-0 basis-full md:basis-1/2 lg:basis-1/2 ${
                       team.id === 1 || team.id === 4 ? "md:pl-12" : ""
                     }`}
                   >
