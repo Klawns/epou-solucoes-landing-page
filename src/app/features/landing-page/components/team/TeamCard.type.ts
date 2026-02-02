@@ -7,9 +7,10 @@ export interface TeamCardProps {
    */
   id: number;
   /**
-   * The URL of the team member's photo. Can be a string or null if no photo is available.
+   * One or more URLs of the team member's photos. Can be a single string, an array of strings, or null if no photo is available.
+   * When absent or null, the component should show a fallback icon.
    */
-  photoUrl: string | null;
+  photos?: string | string[] | null;
   /**
    * The name of the team member.
    */

@@ -1,6 +1,7 @@
 import Header from "../../components/layout/header";
 import Hero from "./components/hero/hero";
 import React, { Suspense } from "react";
+import Reveal from "@/app/components/ui/reveal";
 
 import GalerySkeleton from "./components/galery/galery-skeleton";
 import LocationMapSkeleton from "./components/locationMap/location-map-skeleton";
@@ -45,38 +46,55 @@ export default function Index() {
     <main>
       {/* Carregamento Imediato (Crucial para SEO e UX inicial) */}
       <Header />
-      <Hero />
+      <Reveal>
+        <Hero />
+      </Reveal>
 
       {/* Carregamento Sob Demanda (Melhora a performance inicial) */}
       <Suspense fallback={<OfferedServicesSkeleton />}>
-        <OfferedServices />
+        <Reveal>
+          <OfferedServices />
+        </Reveal>
       </Suspense>
 
       <Suspense fallback={<TeamSkeleton />}>
-        <Team />
+        <Reveal>
+          <Team />
+        </Reveal>
       </Suspense>
 
       <Suspense fallback={<GalerySkeleton />}>
-        <Galery />
+        <Reveal>
+          <Galery />
+        </Reveal>
       </Suspense>
 
       <Suspense fallback={<LocationMapSkeleton />}>
-        <LocationMap />
+        <Reveal>
+          <LocationMap />
+        </Reveal>
       </Suspense>
 
       <Suspense fallback={<RepairEstimateSkeleton />}>
-        <RepairEstimate />
+        <Reveal>
+          <RepairEstimate />
+        </Reveal>
       </Suspense>
 
       <Suspense fallback={<FAQSkeleton />}>
-        <FAQ />
+        <Reveal>
+          <FAQ />
+        </Reveal>
       </Suspense>
-      {/* <Testimonials /> */}
       <Suspense fallback={<ContactSkeleton />}>
-        <Contact />
+        <Reveal>
+          <Contact />
+        </Reveal>
       </Suspense>
       <Suspense fallback={<FooterSkeleton />}>
-        <Footer />
+        <Reveal>
+          <Footer />
+        </Reveal>
       </Suspense>
     </main>
   );

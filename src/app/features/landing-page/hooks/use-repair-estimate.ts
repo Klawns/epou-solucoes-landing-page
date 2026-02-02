@@ -1,6 +1,5 @@
 import { useMemo, useState } from "react";
 import {
-  basePrices,
   modelsByBrand,
   productBrands,
   serviceTypes,
@@ -13,13 +12,7 @@ import {
  * @param {string} modelId - The ID of the device model.
  * @returns {number | null} The calculated price, or null if no price is available.
  */
-const getPrice = (serviceId: string, modelId: string): number | null => {
-  const prices = basePrices as any;
-  if (prices[serviceId] && prices[serviceId][modelId]) {
-    return prices[serviceId][modelId];
-  }
-  return null;
-};
+
 
 /**
  * Formats a number as a currency string in Brazilian Reais (BRL).
@@ -48,16 +41,12 @@ export const useRepairEstimate = () => {
   const [serviceType, setServiceType] = useState<string>("");
   const [productBrand, setProductBrand] = useState<string>("");
   const [model, setModel] = useState<string>("");
+  const [description, setDescription] = useState<string>("");
   const [showEstimate, setShowEstimate] = useState(false);
 
   const availableModels = useMemo(() => {
     return modelsByBrand[productBrand] || [];
   }, [productBrand]);
-
-  const estimatedPrice = useMemo(() => {
-    if (!serviceType || !model) return null;
-    return getPrice(serviceType, model);
-  }, [serviceType, model]);
 
   const isCustomEstimate = useMemo(() => {
     return serviceType === "outro" || model === "outro";
@@ -76,6 +65,11 @@ export const useRepairEstimate = () => {
 
   const handleModelChange = (value: string) => {
     setModel(value);
+    setShowEstimate(false);
+  };
+
+  const handleDescriptionChange = (value: string) => {
+    setDescription(value);
     setShowEstimate(false);
   };
 
@@ -99,9 +93,10 @@ export const useRepairEstimate = () => {
     setProductBrand: handleBrandChange,
     model,
     setModel: handleModelChange,
+    description,
+    setDescription: handleDescriptionChange,
     showEstimate,
     availableModels,
-    estimatedPrice,
     isCustomEstimate,
     handleGetEstimate,
     handleCustomEstimate,

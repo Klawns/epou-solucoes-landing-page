@@ -1,10 +1,10 @@
 import type { GaleryItem } from "@/app/types/galery.type";
 
-import fachada from "../assets/galery_images/fachada.webp";
-import equipamentos from "../assets/galery_images/alguns_aparelhos.webp";
-import acessorios from "../assets/galery_images/acessorios.webp";
-import celular_desmontado from "../assets/galery_images/telefone_desmontado.jpg";
-import maquina_laser from "../assets/galery_images/maquina_laser.webp";
+import fachada from "../assets/galery_images/loja_fisica.jpg";
+import bancada from "../assets/galery_images/bancada.jpeg";
+import acessorios from "../assets/galery_images/acessorios.jpeg";
+import celulares from "../assets/galery_images/celulares.jpeg";
+import maquina_laser from "../assets/galery_images/laser.jpeg";
 
 /**
  * An array of objects representing items in the gallery.
@@ -18,33 +18,33 @@ import maquina_laser from "../assets/galery_images/maquina_laser.webp";
 export const galeryItems: GaleryItem[] = [
   {
     id: 1,
-    title: "Fachada da Loja",
+    title: "Loja Física",
     description:
-      "Uma estrutura moderna e acolhedora, pensada para oferecer a melhor experiência de atendimento aos nossos clientes.",
+      "Um espaço moderno, organizado e de fácil acesso, planejado para receber você com conforto, segurança e um atendimento profissional desde o primeiro contato.",
     icon: fachada,
     orientation: "vertical",
   },
   {
     id: 2,
-    title: "Bancada de Reparos",
+    title: "Laboratório Técnico",
     description:
-      "Nossa oficina é equipada com ferramentas de última geração para um diagnóstico preciso.",
-    icon: equipamentos,
+      "Bancada técnica equipada com ferramentas profissionais e tecnologia de ponta para diagnóstico preciso e reparos avançados.",
+    icon: bancada,
     orientation: "vertical",
   },
   {
     id: 4,
     title: "Especialistas em iPhone e Androids",
     description:
-      "Reparo especializado para todos os modelos de iPhone e Androids.",
-    icon: celular_desmontado,
+      "Contamos com técnicos qualificados e experientes para realizar reparos em diversos modelos de iPhone e Android.",
+    icon: celulares,
     orientation: "vertical",
   },
   {
     id: 5,
-    title: "Acessórios",
+    title: "Acessórios Selecionados",
     description:
-      "Proteja e potencialize seu dispositivo com nossa vasta gama de acessórios de alta qualidade.",
+      "Aqui você encontra acessórios que unem qualidade e funcionalidade. Trabalhamos com produtos Homologados, testados e aprovados para proteger seu celular.",
     icon: acessorios,
     orientation: "vertical",
   },
@@ -52,7 +52,7 @@ export const galeryItems: GaleryItem[] = [
     id: 6,
     title: "Gravação à laser",
     description:
-      "Transforme seus itens com nossa tecnologia de gravação a laser, garantindo personalização exclusiva e acabamento impecável.",
+      "Personalize acessórios, brindes e itens especiais com gravação a laser de alta precisão. Um serviço sofisticado, ideal para presentes, identidade visual e peças exclusivas.",
     icon: maquina_laser,
     orientation: "vertical",
   },

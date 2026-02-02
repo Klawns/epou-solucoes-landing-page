@@ -1,6 +1,14 @@
+import { useRef } from "react";
+import Autoplay from "embla-carousel-autoplay";
 import { Team as TeamData } from "@/app/constants/team";
 import TeamCard from "@/app/features/landing-page/components/team/components/TeamCard.tsx";
-import localTeamImage from "@/app/assets/galery_images/equipe.webp";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/app/components/ui/carousel";
 
 /**
  * Renders the section of the landing page that introduces the team members.
@@ -25,26 +33,57 @@ export default function Team() {
             Nossa Equipe
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Profissionais qualificados e experientes, preparados para oferecer soluções técnicas com excelência, transparência e responsabilidade.
+            Profissionais qualificados e experientes, preparados para oferecer
+            soluções técnicas com excelência, transparência e responsabilidade.
           </p>
         </div>
 
-        {/* Imagem da Equipe */}
+        {/* Imagem da Equipe (uniforme) */}
+        {/*
         <div className="mb-16">
           <img
             src={localTeamImage}
-            alt="Nossa Equipe Reunida"
+            alt="Equipe com uniforme"
             className="w-full max-w-4xl mx-auto rounded-2xl shadow-lg object-cover"
             style={{ aspectRatio: "16/9" }}
             loading="lazy"
             decoding="async"
           />
         </div>
+        */}
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {TeamData.map((team) => (
-            <TeamCard key={team.id} {...team} />
-          ))}
+        {/* Carousel of team members */}
+        <div>
+          <div className="w-full max-w-5xl mx-auto">
+            <Carousel
+              opts={{ align: "start", loop: true }}
+              plugins={[
+                useRef(Autoplay({ delay: 2500, stopOnInteraction: true }))
+                  .current,
+              ]}
+              className="w-full"
+            >
+              <CarouselContent className="-ml-2 md:-ml-4">
+                {TeamData.map((team) => (
+                  <CarouselItem
+                    key={team.id}
+                    className={`pl-4 md:pl-6 min-w-0 shrink-0 grow-0 basis-[85%] md:basis-1/2 lg:basis-1/2 ${
+                      team.id === 1 || team.id === 4 ? "md:pl-12" : ""
+                    }`}
+                  >
+                    <TeamCard {...team} />
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+
+              <CarouselPrevious className="hidden md:flex -left-12 bg-background border-border hover:bg-secondary" />
+              <CarouselNext className="hidden md:flex -right-12 bg-background border-border hover:bg-secondary" />
+            </Carousel>
+          </div>
+
+          <p className="text-center text-sm text-muted-foreground mt-6 md:hidden">
+            Deslize para ver mais →
+          </p>
         </div>
       </div>
     </section>

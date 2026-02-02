@@ -13,5 +13,14 @@ import AppRoutes from "@/routes/app-routes";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <AppRoutes />
-  </StrictMode>
+  </StrictMode>,
 );
+
+// Register service worker if available and in production
+if (typeof window !== "undefined" && "serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    if (import.meta.env.PROD) {
+      navigator.serviceWorker.register("/sw.js").catch(() => {});
+    }
+  });
+}

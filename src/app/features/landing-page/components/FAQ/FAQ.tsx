@@ -19,20 +19,14 @@ export default function FAQ() {
   // Splits the list of questions in two to create a two-column layout.
   const leftColumn = faqItems.slice(0, Math.ceil(faqItems.length / 2));
   const rightColumn = faqItems.slice(Math.ceil(faqItems.length / 2));
-    return (
-        <section id="faq" className="py-24 bg-background">
+  return (
+    <section id="faq" className="py-24 bg-background">
       <div className="container mx-auto px-6">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground mb-4">
-            Tire suas dúvidas
-          </span>
           <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
             Perguntas Frequentes
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Respondemos as principais dúvidas sobre nossos serviços de assistência técnica.
-          </p>
         </div>
 
         {/* Two-column Accordion Layout */}
@@ -75,5 +69,5 @@ export default function FAQ() {
         </div>
       </div>
     </section>
-    )
+  );
 }

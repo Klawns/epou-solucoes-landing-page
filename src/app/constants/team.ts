@@ -1,4 +1,6 @@
 import type { TeamCardProps } from "@/app/features/landing-page/components/team/TeamCard.type";
+import cleyton from "@/app/assets/team/cleyto.jpg";
+import daniel from "@/app/assets/galery_images/bancada.jpeg";
 
 /**
  * An array of objects representing the team members.
@@ -13,41 +15,42 @@ import type { TeamCardProps } from "@/app/features/landing-page/components/team/
  *
  * @todo The `photoUrl` is currently `null` for all team members. This should be updated with the actual photo URLs.
  */
+
 export const Team: TeamCardProps[] = [
   {
     id: 1,
-    photoUrl: null,
+    photos: cleyton,
     personName: "Cleyton Pettenon",
     position: "Especialista em Macbooks, Hardware e Recondicionamento de Telas",
     description:
-      "Técnico com ampla experiência em manutenção de celulares e especialização em MacBooks. Atua em reparos avançados de hardware, incluindo placa lógica, além de recondicionamento de telas e soluções técnicas de alta complexidade.",
+      "Técnico especializado em MacBooks e manutenção avançada de hardware, com foco em diagnóstico e recondicionamento de telas.",
     phone: null,
   },
   {
     id: 2,
-    photoUrl: null,
+    photos: null,
     personName: "Gabriela Coelho",
-    position: "Responsável Administrativa e Financeira",
+    position: "Administrativo e Financeiro",
     description:
-      "Responsável pela gestão administrativa e financeira da Épou Soluções, garantindo organização, transparência e um atendimento estruturado do início ao fim. Atua no controle de qualidade dos serviços, relacionamento com clientes e suporte à equipe técnica.",
+      "Responsável pela gestão administrativa e financeira, garantindo organização, transparência e controle de qualidade no atendimento.",
     phone: null,
   },
   {
     id: 3,
-    photoUrl: null,
+    photos: daniel,
     personName: "Daniel Martins",
     position: "Especialista Técnico em Smartphones",
     description:
-      "Profissional especializado em diagnóstico e reparo de smartphones, atuando com troca de telas, baterias e componentes internos, sempre com foco em qualidade, segurança e durabilidade dos serviços.",
+      "Especialista em diagnóstico e reparo de smartphones, realizando trocas de componentes com foco em qualidade e durabilidade.",
     phone: null,
   },
   {
     id: 4,
-    photoUrl: null,
+    photos: null,
     personName: "Eneti Martinho",
-    position: "Atendimento, Laser e Dispositivos",
+    position: "Atendimento e Gravação a Laser",
     description:
-      "Atua no atendimento ao cliente e é responsável pela operação de gravação a laser, garantindo personalização com precisão, qualidade e acabamento profissional.",
+      "Responsável pelo atendimento ao cliente e operação de gravação a laser, garantindo personalização com precisão e qualidade.",
     phone: null,
   },
 ];

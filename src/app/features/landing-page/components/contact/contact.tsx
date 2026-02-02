@@ -208,14 +208,19 @@ export default function Contact() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
+            {/*
             <span className="inline-block px-4 py-2 bg-primary-foreground/10 rounded-full text-sm font-medium mb-4">
               Entre em Contato
             </span>
+            */}
+
             <h2 className="text-4xl md:text-5xl font-bold tracking-tight mb-4">
               Precisa de Reparo?
             </h2>
             <p className="text-lg text-primary-foreground/70 max-w-2xl mx-auto">
-              Seu dispositivo quebrou? Entre em contato e faça um orçamento.
+              Se o seu celular, iPad ou MacBook apresentou algum problema, entre
+              em contato com a Épou Soluções e receba atendimento rápido,
+              profissional e transparente.
             </p>
           </div>
 

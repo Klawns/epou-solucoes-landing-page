@@ -28,8 +28,6 @@ export default function Footer() {
     ],
     empresa: [
       { label: "Sobre Nós", href: "#equipe" },
-      { label: "Nossa Equipe", href: "#equipe" },
-      { label: "Galeria", href: "#galeria" },
       { label: "Contato", href: "#contato" },
     ],
   };
@@ -50,8 +48,9 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-muted-foreground mb-6 text-sm leading-relaxed">
-              Especialistas em reparo de dispositivos Apple e eletrônicos.
-              Qualidade, confiança e agilidade em cada serviço.
+              Assistência técnica especializada em dispositivos Apple e
+              eletrônicos, com foco em qualidade, confiança e agilidade em cada
+              serviço
             </p>
             {/* Social links */}
             <div className="flex items-center gap-3">

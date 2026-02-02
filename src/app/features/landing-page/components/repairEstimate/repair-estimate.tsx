@@ -1,4 +1,3 @@
-import RepairEstimateResultCard from "@/app/features/landing-page/components/repairEstimate/repairEstimativeCard";
 import { Button } from "@/app/components/ui/button";
 import {
   Select,
@@ -7,7 +6,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/app/components/ui/select";
-import { Calculator, HelpCircle, ChevronRight } from "lucide-react";
+import { HelpCircle, ChevronRight } from "lucide-react";
 import { useRepairEstimate } from "@/app/features/landing-page/hooks/use-repair-estimate";
 
 /**
@@ -29,13 +28,10 @@ export default function RepairEstimate() {
     setProductBrand,
     model,
     setModel,
-    showEstimate,
+    description,
+    setDescription,
     availableModels,
-    estimatedPrice,
     isCustomEstimate,
-    handleGetEstimate,
-    handleCustomEstimate,
-    formatCurrency,
     serviceTypes,
     productBrands,
   } = useRepairEstimate();
@@ -45,13 +41,8 @@ export default function RepairEstimate() {
   const selectedModel = availableModels.find((m) => m.id === model);
 
   const whatsappMessage = isCustomEstimate
-    ? `Olá! Vim pelo site e gostaria de solicitar um orçamento. Poderiam me ajudar?`
-    : `Olá! Vim pelo site e gostaria de verificar esse orçamento:
-
-Serviço: ${selectedService?.label || ""}
-Dispositivo: ${selectedBrand?.label || ""} - ${selectedModel?.label || ""}
-
-Poderiam me ajudar?`;
+    ? `Olá! Vim pelo site da Épou Soluções e gostaria de solicitar uma análise técnica.\n\n Tipo de serviço: ${selectedService?.label || ""}\n Dispositivo: ${selectedBrand?.label || ""} – ${selectedModel?.label || ""}\n Relato do problema: ${description || "Descreva brevemente o problema do seu dispositivo (ex.: sofreu queda, entrou em contato com líquido, não liga, falha na tela, bateria descarregando rápido, etc.)."}\n\nPoderiam me ajudar, por favor?`
+    : `Olá! Vim pelo site da Épou Soluções e gostaria de solicitar uma análise técnica.\n\n\n Tipo de serviço: ${selectedService?.label || ""}\n Dispositivo: ${selectedBrand?.label || ""} – ${selectedModel?.label || ""}\n Relato do problema: ${description || "Descreva brevemente o problema do seu dispositivo (ex.: sofreu queda, entrou em contato com líquido, não liga, falha na tela, bateria descarregando rápido, etc.)."}\n\nPoderiam me ajudar, por favor?`;
 
   const whatsappLink = `https://wa.me/55999991275314?text=${encodeURIComponent(whatsappMessage)}`;
 
@@ -60,15 +51,20 @@ Poderiam me ajudar?`;
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-12">
+          {/*
           <span className="inline-block px-4 py-2 bg-gray-800 rounded-full text-sm font-medium text-gray-400 mb-4">
             <Calculator className="w-4 h-4 inline mr-2" />
             Calculadora
           </span>
+          */}
+
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-white">
-            Obter uma Estimativa
+            Solicite uma análise
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Faça suas seleções abaixo e descubra o valor estimado do reparo.
+            Informe os dados do seu dispositivo e descreva o problema
+            apresentado. Nossa equipe técnica analisará as informações e
+            indicará a melhor solução para o seu caso.
           </p>
         </div>
 
@@ -153,7 +149,20 @@ Poderiam me ajudar?`;
               </Select>
             </div>
 
-            <a
+            <div className="space-y-2">
+              <label className="text-sm text-gray-400">
+                Relato do problema
+              </label>
+              <textarea
+                value={description}
+                onChange={(e) => setDescription(e.target.value)}
+                placeholder="Descreva brevemente o problema do seu dispositivo (ex.: sofreu queda, entrou em contato com líquido, não liga, falha na tela, bateria descarregando rápido, etc.)."
+                className="w-full min-h-[100px] resize-y bg-gray-800 border border-gray-700 text-white rounded-xl p-3 placeholder:text-gray-400"
+              />
+            </div>
+
+            {/**
+              <a
 
               className="inline-flex items-center text-sm text-blue-400 hover:text-blue-300 transition-colors cursor-pointer"
               onClick={handleCustomEstimate}
@@ -162,27 +171,26 @@ Poderiam me ajudar?`;
               Não encontrou seu modelo de dispositivo ou serviço?
               <ChevronRight className="w-4 h-4 ml-1" />
             </a>
+            */}
           </div>
 
           <Button
-            onClick={handleGetEstimate}
+            onClick={() => {
+              if (!serviceType || !productBrand || !model) return;
+              window.open(whatsappLink, "_blank");
+            }}
             disabled={!serviceType || !productBrand || !model}
-            variant="outline"
+            variant="default"
             size="lg"
-            className="w-full mb-8 h-15 rounded-xl border-gray-600 text-white hover:bg-gray-800 disabled:opacity-50"
+            className="w-full mb-2 h-15 rounded-xl bg-blue-600 border-blue-600 text-white hover:bg-blue-700 disabled:opacity-50"
           >
-            Obter estimativa
+            Solicitar avaliação técnica
           </Button>
 
-          {/* Result */}
-          {showEstimate && (estimatedPrice || isCustomEstimate) && (
-            <RepairEstimateResultCard
-              isCustomEstimate={isCustomEstimate}
-              estimatedPrice={estimatedPrice}
-              formatCurrency={formatCurrency}
-              whatsappLink={whatsappLink}
-            />
-          )}
+          <p className="text-gray-400 text-sm mb-8">
+            A análise é gratuita e sem compromisso. O orçamento final é
+            realizado após avaliação técnica.
+          </p>
         </div>
       </div>
     </section>

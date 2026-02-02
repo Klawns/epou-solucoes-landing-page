@@ -22,14 +22,17 @@ export default function LocationMap() {
     <section id="localização" className="py-20 bg-background">
       <div className="container mx-auto px-6">
         <div className="text-center mb-12">
+          {/* 
           <span className="inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground mb-4">
             Localização
           </span>
+          */}
+
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
             Onde Estamos
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Visite nossa loja e conheça nossa estrutura de perto.
+            Estamos localizados em Imperatriz - MA, com fácil acesso e estrutura preparada para receber você e seu dispositivo com conforto e segurança.
           </p>
         </div>
 
