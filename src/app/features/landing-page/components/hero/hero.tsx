@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <span className="animate-fade-up inline-block px-4 py-2 bg-secondary rounded-full text-sm font-medium text-muted-foreground mb-8">
-            Assistência Técnica Especializada
+            Assistência Técnica Especializada em Imperatriz
 
           </span>
 
