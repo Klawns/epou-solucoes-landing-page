@@ -44,13 +44,11 @@ export default function Index() {
 
   return (
     <main>
-      {/* Carregamento Imediato (Crucial para SEO e UX inicial) */}
       <Header />
       <Reveal>
         <Hero />
       </Reveal>
 
-      {/* Carregamento Sob Demanda (Melhora a performance inicial) */}
       <Suspense fallback={<OfferedServicesSkeleton />}>
         <Reveal>
           <OfferedServices />

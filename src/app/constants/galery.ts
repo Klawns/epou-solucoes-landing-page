@@ -1,10 +1,11 @@
 import type { GaleryItem } from "@/app/types/galery.type";
 
-import fachada from "../assets/galery_images/loja_fisica.jpg";
 import bancada from "../assets/galery_images/bancada.jpeg";
 import acessorios from "../assets/galery_images/acessorios.jpeg";
 import celulares from "../assets/galery_images/celulares.jpeg";
 import maquina_laser from "../assets/galery_images/laser.jpeg";
+import fachada_nova from "../assets/galery_images/fachada_nova.jpg";
+
 
 /**
  * An array of objects representing items in the gallery.
@@ -21,7 +22,7 @@ export const galeryItems: GaleryItem[] = [
     title: "Loja Física",
     description:
       "Um espaço moderno, organizado e de fácil acesso, planejado para receber você com conforto, segurança e um atendimento profissional desde o primeiro contato.",
-    icon: fachada,
+    icon: fachada_nova,
     orientation: "vertical",
   },
   {

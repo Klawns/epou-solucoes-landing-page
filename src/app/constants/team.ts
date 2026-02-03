@@ -1,6 +1,8 @@
 import type { TeamCardProps } from "@/app/features/landing-page/components/team/TeamCard.type";
-import cleyton from "@/app/assets/team/cleyto.jpg";
-import daniel from "@/app/assets/galery_images/bancada.jpeg";
+import cleyton from "@/app/assets/team/cleyton2.jpg";
+import daniel from "@/app/assets/team/daniel6.jpg";
+import eneti from "@/app/assets/team/eneti2.jpg";
+import gaby from "@/app/assets/team/gaby2.jpg";
 
 /**
  * An array of objects representing the team members.
@@ -28,7 +30,7 @@ export const Team: TeamCardProps[] = [
   },
   {
     id: 2,
-    photos: null,
+    photos: gaby,
     personName: "Gabriela Coelho",
     position: "Administrativo e Financeiro",
     description:
@@ -46,7 +48,7 @@ export const Team: TeamCardProps[] = [
   },
   {
     id: 4,
-    photos: null,
+    photos: eneti,
     personName: "Eneti Martinho",
     position: "Atendimento e Gravação a Laser",
     description:
